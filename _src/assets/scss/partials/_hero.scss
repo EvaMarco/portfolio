@@ -1,0 +1,94 @@
+.main__title{
+  font-family: 'Orbitron', sans-serif;
+  color:#CDD977;
+  line-height: 45px;
+}
+.job__title{
+  font-family: 'Orbitron', sans-serif;
+  font-size: 1em;
+  color:#CDD977;
+}
+.hamb__menu{
+  font-size: 20px;
+  background-image: url(../images/ico-menu.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top:0;
+  right:0;
+  z-index: 2;
+  margin:10px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100vw; /* Full width */
+  height: 100vh; /* Full height */
+  // overflow: auto; /* Enable scroll if needed */
+  background-color: rgba(0, 0, 0, 0.733); /* Black w/ opacity */
+}
+
+/* Modal Content/Box */
+
+.modal-content {
+  text-transform: uppercase;
+  font-family: 'Open Sans', sans-serif;
+  color: #CDD977;
+  background-color: $color-bg;
+  margin: 40vh auto; /* 15% from the top and centered */
+  padding: 20px;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+.modal__list{
+  list-style: none;
+  margin:0;
+  padding:0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.modal__item{
+  display:inline-block;
+  padding:10px;
+
+}
+.link{
+  text-decoration: none;
+  color: #CDD977;
+  &:hover{
+    color: #8377d9;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  &:visited{
+    color: #8377d9;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+}
+/* The Close Button */
+.close {
+  color: #CDD977;
+  font-size: 28px;
+  font-weight: bold;
+  position:absolute;
+  top:40%;
+  right:10%;
+}
+
+.close:hover,
+.close:focus {
+  color: #8377d9;
+  text-decoration: none;
+  cursor: pointer;
+}
