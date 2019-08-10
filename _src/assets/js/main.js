@@ -8,7 +8,6 @@ const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('.close');
 
 function openMenu (){
-  modal.style.display=  'block';
   modal.classList.add('one');
   modal.classList.remove('out');
 }
