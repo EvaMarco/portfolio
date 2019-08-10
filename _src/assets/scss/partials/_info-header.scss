@@ -1,0 +1,188 @@
+.info__header{
+  position:fixed;
+  top:0;
+  left:0;
+  width:50px;
+  height:100vh;
+  background-color: #131313;
+}
+.info__nav{
+  height: 100%;
+}
+.nav__list, .links, .rrss{
+  list-style: none;
+  margin:0;
+  padding:0;
+  height: 100%;
+}
+.nav__list{
+  display:flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+.home__link-info{
+  margin:15px;
+  width:10px;
+  height: 1px;
+  padding-top:20px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/home.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  &:hover{
+    background-image: url(../images/home-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/home-hover.svg);
+  }
+}
+.about__link-info{
+  margin:15px;
+  width: 10px;
+  height: 1px;
+  padding-top:19px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/user.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/user-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/user-hover.svg);
+  }
+}
+.projects__link-info{
+  display:inline-block;
+  margin:12px;
+  width: 15px;
+  height: 1px;
+  padding-top:19px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/eye-regular.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/eye-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/eye-hover.svg);
+  }
+}
+.contact__link-info{
+  display:inline-block;
+  margin:12px;
+  width: 15px;
+  height: 1px;
+  padding-top:24px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/email.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/email-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/email-hover.svg);
+  }
+}
+.twitter__link-info{
+  display:inline-block;
+  margin:6px 15px;
+  width: 6px;
+  height: 1px;
+  padding-top:14px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/twitter.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/twitter-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/twitter-hover.svg);
+  }
+}
+.linkedIn__link-info{
+  display:inline-block;
+  margin:6px 15px;
+  width: 6px;
+  height: 1px;
+  padding-top:14px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/linkedin2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/linkedin2-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/linkedin2-hover.svg);
+  }
+}
+.medium__link-info{
+  display:inline-block;
+  margin:6px 15px;
+  width: 6px;
+  height: 1px;
+  padding-top:14px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/medium-m-brands.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/medium-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/medium-hover.svg);
+  }
+}
+.github__link-info{
+  display:inline-block;
+  margin:6px 15px;
+  width: 6px;
+  height: 1px;
+  padding-top:14px;
+  padding-left:10px;
+  overflow: hidden;
+  background-image: url(../images/github2.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display:inline-block;
+  cursor: pointer;
+  &:hover{
+    background-image: url(../images/github2-hover.svg);
+  }
+  &:active{
+    background-image: url(../images/github2-hover.svg);
+  }
+}

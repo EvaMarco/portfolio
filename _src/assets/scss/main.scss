@@ -1,14 +1,21 @@
 @import 'core/mainBG';
 @import 'partials/hero';
+@import 'partials/about';
+@import 'partials/projects';
+@import 'partials/contact';
+@import 'partials/info-header';
 
 
 html, body {
   height: 100%;
 }
 
-body {
+.index__page {
   display: flex;
   justify-content: center;
   align-items: center;
   overflow: hidden;
+}
+.info__page{
+  background-color: $color-bg;
 }

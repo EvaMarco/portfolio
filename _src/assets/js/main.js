@@ -9,9 +9,13 @@ const closeBtn = document.querySelector('.close');
 
 function openMenu (){
   modal.style.display=  'block';
+  modal.classList.add('one');
+  modal.classList.remove('out');
 }
 function closeMenu (){
-  modal.style.display=  'none';
+  //modal.style.display=  'none';
+  modal.classList.add('out');
+  modal.classList.remove('one');
 }
 menuBtn.addEventListener('click', openMenu);
 closeBtn.addEventListener('click', closeMenu);
