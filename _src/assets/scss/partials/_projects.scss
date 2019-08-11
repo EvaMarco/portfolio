@@ -11,9 +11,11 @@
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px 8px;
 }
 .project{
   width: calc((100vw - 120px)/3);
+  cursor: pointer;
 }
 .image{
   width: calc((100vw - 120px)/3);
@@ -53,4 +55,8 @@
 .project9{
   grid-column: 3/4;
   grid-row:3/4;
+}
+.image-modal{
+  width: calc((100vw - 250px));
+  margin:20px auto;
 }
