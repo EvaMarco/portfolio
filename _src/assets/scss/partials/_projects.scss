@@ -11,14 +11,14 @@
   display:grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5px 8px;
+  grid-gap: 1px 8px;
 }
 .project{
   width: calc((100vw - 120px)/3);
-  cursor: pointer;
 }
 .image{
   width: calc((100vw - 120px)/3);
+  cursor: pointer;
 }
 .project1{
   grid-column: 1/2;
@@ -56,7 +56,39 @@
   grid-column: 3/4;
   grid-row:3/4;
 }
+.info__btn{
+  text-align: center;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: solid 2px green;
+  border-radius: 15px;
+  display:inline;
+  padding: 0 20px;
+  margin:0 auto;
+  position: absolute;
+  bottom:5px;
+  left:50%;
+  transform: translate(-50%, -50%);
+  font-size: 16px;
+}
+.project__image-modal{
+  width: calc((100% - 150px));
+  max-width: 790px;
+  min-width: 250px;
+  margin:0 auto;
+}
 .image-modal{
-  width: calc((100vw - 250px));
+  display:inline;
+  border-radius: 8px;
+  max-height: 420px;
+}
+.info__content {
+  flex-direction: column;
+  text-transform: none;
+}
+.info__text{
+  width: calc((100% - 120px));
+  min-width: 250px;
   margin:20px auto;
+  font-size:18px;
 }

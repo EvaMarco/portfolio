@@ -6,7 +6,7 @@ console.log('>> Ready :)');
 const menuBtn = document.querySelector('.js__menu');
 const modal = document.querySelector('.modal');
 const closeBtn = document.querySelector('.close');
-const modalImage = document.querySelectorAll('.project');
+const modalImage = document.querySelectorAll('.image');
 const closeProyect = document.querySelectorAll('.close-project');
 
 function openMenu (){

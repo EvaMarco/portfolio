@@ -24,10 +24,7 @@
   cursor: pointer;
 }
 
-
-
 /* Modal Content/Box */
-
 
 .modal {
   position:fixed;
@@ -78,6 +75,7 @@
   background-color: $color-bg;
   margin: 4% auto; /* 15% from the top and centered */
   padding: 20px;
+  position:relative;
 }
 .modal__list{
   list-style: none;
@@ -88,10 +86,12 @@
   align-items: center;
   flex-direction: column;
 }
+
 .modal__item{
   display:inline-block;
   padding:10px;
 }
+
 .link{
   text-decoration: none;
   cursor: pointer;
@@ -112,8 +112,8 @@
   font-size: 28px;
   font-weight: bold;
   position:absolute;
-  top:calc(10vh + 5px);
-  right:calc(10vw + 20px);
+  top:20px;
+  right:30px;
 }
 
 .close:hover,
