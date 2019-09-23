@@ -2,56 +2,67 @@
   position:fixed;
   top:0;
   left:0;
-  width:50px;
-  height:100vh;
+  width:100vw;
+  height:50px;
   background-color: #131313;
+  @media (min-width: 768px){
+    width:50px;
+    height:100vh;
+  }
 }
 .info__nav{
   height: 100%;
 }
 .nav__list, .links, .rrss{
-  list-style: none;
-  margin:0;
-  padding:0;
   height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  @media (min-width: 768px){
+    justify-content: space-between;
+    flex-direction: column;
+  }
 }
 .nav__list{
   display:flex;
-  justify-content: space-between;
-  flex-direction: column;
+  justify-content: space-around;
+  flex-direction: row;
+  @media (min-width: 768px){
+    flex-direction: column;
+  }
 }
 
 .home__link-info{
-  margin:15px;
-  width:10px;
+  display: inline-block;
+  margin:8px;
+  width:18px;
   height: 1px;
   padding-top:20px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/home.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
   &:hover{
     background-image: url(../images/home-hover.svg);
   }
   &:active{
     background-image: url(../images/home-hover.svg);
   }
+  @media (min-width: 768px){
+    width:35px;
+    padding-top:25px;
+  }
 }
 .about__link-info{
-  margin:15px;
-  width: 10px;
+  display: inline-block;
+  margin:8px;
+  width: 18px;
   height: 1px;
   padding-top:19px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/user.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
   cursor: pointer;
   &:hover{
     background-image: url(../images/user-hover.svg);
@@ -59,20 +70,22 @@
   &:active{
     background-image: url(../images/user-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:15px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .projects__link-info{
-  display:inline-block;
-  margin:12px;
-  width: 15px;
+  margin:8px;
+  width: 18px;
   height: 1px;
   padding-top:19px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/eye-regular.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
+  display: inline-block;
   cursor: pointer;
   &:hover{
     background-image: url(../images/eye-hover.svg);
@@ -80,20 +93,22 @@
   &:active{
     background-image: url(../images/eye-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:12px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .contact__link-info{
-  display:inline-block;
-  margin:12px;
-  width: 15px;
+  margin:10px;
+  width: 18px;
   height: 1px;
   padding-top:24px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/email.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
+  display: inline-block;
   cursor: pointer;
   &:hover{
     background-image: url(../images/email-hover.svg);
@@ -101,20 +116,22 @@
   &:active{
     background-image: url(../images/email-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:12px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .twitter__link-info{
-  display:inline-block;
-  margin:6px 15px;
-  width: 6px;
+  margin:6px 8px;
+  width: 8px;
   height: 1px;
   padding-top:14px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/twitter.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
+  display: inline-block;
   cursor: pointer;
   &:hover{
     background-image: url(../images/twitter-hover.svg);
@@ -122,20 +139,22 @@
   &:active{
     background-image: url(../images/twitter-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:6px 15px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .linkedIn__link-info{
   display:inline-block;
-  margin:6px 15px;
-  width: 6px;
+  margin:6px 8px;
+  width: 8px;
   height: 1px;
   padding-top:14px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/linkedin2.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
   cursor: pointer;
   &:hover{
     background-image: url(../images/linkedin2-hover.svg);
@@ -143,20 +162,22 @@
   &:active{
     background-image: url(../images/linkedin2-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:6px 15px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .medium__link-info{
   display:inline-block;
-  margin:6px 15px;
-  width: 6px;
+  margin:6px 8px;
+  width: 8px;
   height: 1px;
   padding-top:14px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/medium-m-brands.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
   cursor: pointer;
   &:hover{
     background-image: url(../images/medium-hover.svg);
@@ -164,25 +185,32 @@
   &:active{
     background-image: url(../images/medium-hover.svg);
   }
+  @media (min-width: 768px){
+    margin:6px 15px;
+    width:35px;
+    padding-top:25px;
+  }
 }
 .github__link-info{
   display:inline-block;
-  margin:6px 15px;
-  width: 6px;
+  margin:6px 8px;
+  width: 8px;
   height: 1px;
   padding-top:14px;
   padding-left:10px;
   overflow: hidden;
   background-image: url(../images/github2.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display:inline-block;
+  @include icon-bg;
   cursor: pointer;
   &:hover{
     background-image: url(../images/github2-hover.svg);
   }
   &:active{
     background-image: url(../images/github2-hover.svg);
+  }
+  @media (min-width: 768px){
+    margin:6px 15px;
+    width:35px;
+    padding-top:25px;
   }
 }

@@ -1,3 +1,4 @@
+@import 'components/mixins';
 @import 'core/mainBG';
 @import 'partials/hero';
 @import 'partials/about';
@@ -5,6 +6,12 @@
 @import 'partials/contact';
 @import 'partials/info-header';
 
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
 html, body {
   height: 100%;
 }
@@ -18,3 +25,7 @@ html, body {
 .info__page{
   background-color: $color-bg;
 }
+.hidden{
+  display: none;
+}
+

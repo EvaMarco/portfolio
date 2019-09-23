@@ -1,20 +1,36 @@
 .about{
   min-height:100vh;
-  padding-left: 100px;
+  @media (min-width: 768px){
+    padding-left: 100px;
+  }
 }
 .about__title{
-  margin-top: 50px;
+  margin: 80px auto 0 auto;
+  text-align: center;
   color:lime;
 }
 .about__img{
-  height: 400px;
+  height: 200px;
   border-radius: 7px;
   box-shadow: 2px  3px 20px rgba(0, 0, 0, 0.603);
-  margin: 0 auto;
+  margin: 20px auto;
+  @media (min-width: 768px){
+    height: 400px;
+  }
+}
+.about__text{
+  padding: 10px;
+  color: lightgreen;
+  text-align: justify;
 }
 .about__grid{
   display:grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+
+  @media (min-width: 768px){
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+  }
 }
 .personal__info{
   display: flex;
@@ -22,3 +38,46 @@
   flex-direction: column;
   padding: 20px;
 }
+.skills{
+  padding: 35px 20px;
+}
+.skill__title{
+  color:lime;
+  margin-bottom: 20px;
+}
+.skill{
+  color: lightgreen;
+  text-align: justify;
+  padding: 10px;
+  color: black;
+}
+.skill__list{
+
+  display: flex;
+  justify-content: space-between;
+}
+.skill__link{
+  font-size:14px;
+  writing-mode: tb-rl;
+  @include center;
+  height: 100px;
+  width: 55px;
+  padding: 8px;
+  cursor: pointer;
+}
+.skill1{
+  background-color: yellow;
+}
+.skill2{
+  background-color: orange;
+}
+.skill3{
+  background-color: red;
+}
+.skill4{
+  background-color: purple;
+}
+.skill5{
+  background-color: blue;
+}
+
