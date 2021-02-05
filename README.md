@@ -2,7 +2,7 @@
 
 <img src="assets/images/eva_log.png" alt="Eva Marco logo" height="200px">
 
-These is a little peace of what I learn in Adalab bootcamp. I want to keep learning every day.
+These is a little piece of what I learn in Adalab bootcamp. I want to keep learning every day.
 
 ## Start
 
